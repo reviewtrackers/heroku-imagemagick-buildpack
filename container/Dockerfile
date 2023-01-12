@@ -1,4 +1,4 @@
-FROM heroku/heroku:22-build
+FROM heroku/heroku:20-build
 
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -6,7 +6,7 @@ ARG COMPILE_VERSION_LIBDE265=1.0.9
 ARG COMPILE_VERSION_LIBAOM=3.5.0
 ARG COMPILE_VERSION_LIBHEIF=1.14.0
 ARG COMPILE_VERSION_LIBWEBP=1.2.4
-ARG COMPILE_VERSION_IMAGEMAGICK=7.1.0-53
+ARG COMPILE_VERSION_IMAGEMAGICK=7.0.10-9
 
 RUN apt-get -yq update \
   # Needed for libaom library cmake optimizations
